@@ -1,7 +1,7 @@
 **********************************BUILD PROJECT TIMELINE ANALYSIS**********************************
 
 
--- This README file provides an overview of the Build Project Timeline Analysis for New Asset Deployments in the RAN Network. This project analyses project timelines and cost-impacting variables to improve forecasting for new asset deployments using machine learning models such as Random Forest, Linear Regression, and LSTM.
+-- This README file provides an overview of the Build Project Timeline Analysis for New Asset Deployments. This project analyses project timelines and cost-impacting variables to improve forecasting for new asset deployments using machine learning models such as Random Forest, Linear Regression, and LSTM.
 
 -- The following sections provide details on prerequisites, how to run the code, key steps involved, and methods for analysing and forecasting project timelines.
 
@@ -56,7 +56,7 @@ You need the dataset stored in CSV files in the following folder structure:
 - A bar plot is created to visualize the percentage of missing data.
 
 ### Step-6: Feature Selection using XGBoost
-- The code uses XGBoost to select the top features that impact the target variable "Tech_TTO_A" (the predicted timeline of the project). The top features are selected based on feature importance.
+- The code uses XGBoost to select the top features that impact the target variable which is the predicted timeline of the project. The top features are selected based on feature importance.
 
 - The top "N" features can be visualized via a bar plot.
 
@@ -66,7 +66,7 @@ You need the dataset stored in CSV files in the following folder structure:
 - A heatmap is plotted to visualize the correlations.
 
 ### Step-8: Model Building and Evaluation
-- The project uses three different approaches for predicting the target column (project timeline):
+- The project uses two different approaches for predicting the target column (project timeline):
 
 - A Random Forest Regressor model, Linear Regression model and Long Short-Term Memory (LSTM) model are trained and evaluated using Milestone-based Duration Calculation and Forecasted Date and Delay based prediction.
 
